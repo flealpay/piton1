@@ -124,6 +124,7 @@ df.head()
 
 
 def age_30(age):
+
     df['age_flag_2'] = [1 if age < 30 else 0 for age in df['age']]
 
 df['age'].apply(lambda x: age_30(x))
